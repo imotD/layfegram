@@ -4,7 +4,8 @@ function onSignIn(googleUser) {
   console.log(`Email: ${profile.getEmail()}`);
 
   let x = document.getElementsByClassName("logged");
-  for (let i = 0; i < x.length; i++) {
+
+  for (let i = 0; i <= x.length; i++) {
     x[0].classList.remove("logged");
   }
 }
@@ -19,7 +20,7 @@ function onSignOut() {
 
 function hideDashboard() {
   let x = document.getElementsByClassName("onlylogged");
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i <= i.length; i++) {
     x[i].classList.add("logged");
   }
 }

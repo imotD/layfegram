@@ -1,2 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#app {
+  background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
+  height: 100vh;
+  margin: auto;
+  width: 425px;
+  font-family: 'Inconsolata', monospace;
+  position: relative;
+  z-index: 1;
+}
+
+#app header .logo-brand {
+  margin-top: 25px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#app header .logo-brand span {
+  color: #C7C7C9;
+}
+
+#app main {
+  margin-top: 185px;
+  text-align: center;
+}
+
+#app main .btn-cta {
+  color: white;
+  background-color: #6387FF;
+  width: 50%;
+  padding: 15px;
+}
+
+#app main .img-absolute--primary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#app main .img-absolute--secondary-love {
+  position: absolute;
+  top: 25vh;
+  left: 0;
+}
+
+#app main .img-absolute--secondary-hesteg {
+  position: absolute;
+  right: 0;
+  top: 2  0vh;
+}
+
+#app main .img-absolute--secondary-zig {
+  position: absolute;
+  right: 30px;
+  top: 70vh;
+}
+
+#app footer {
+  background-color: #c8e0fd75;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
