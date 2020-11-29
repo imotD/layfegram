@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-sign-scope" content="profile email">
-  <meta name="google-sign-client_id" content="28444918888-7hptkdl74vtn2nipb4q2ck9c3ilf6cm1.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="28444918888-7hptkdl74vtn2nipb4q2ck9c3ilf6cm1.apps.googleusercontent.com">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <title>Layfegram </title>
@@ -28,9 +28,18 @@
       </div>
     </header>
     <main>
-      <button type="button" class="btn btn-cta rounded-pill">
-        Sign In
-      </button>
+      <div class="gs">
+        <div class="g-sigin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+      </div>
+      <!-- <button type="button" class="btn btn-cta rounded-pill" data-onsuccess="onSignIn" data-theme="dark">
+
+      </button> -->
+      <div class="or logged onlylogged">
+        <a href="#" onclick="gotoDashborad();">Dashboard</a>
+      </div>
+      <div class="or logged onlylogged">
+        <a href="#" onclick="onSignOut();">Sign out</a>
+      </div>
       <div class="img-absolute">
         <img class="img-absolute--secondary-love" src="img/d-love.png" alt="detail">
         <img class="img-absolute--secondary-hesteg" src="img/d-hesteg.png" alt="detail">
@@ -44,14 +53,13 @@
   </div>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="js/login.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
-
-  <script src="js/login.js"></script>
 </body>
 
 </html>

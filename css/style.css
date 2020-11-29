@@ -38,6 +38,24 @@
   padding: 15px;
 }
 
+#app main .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15px;
+  margin: 15px 0 20px;
+}
+
+#app main .logged {
+  display: none !important;
+}
+
 #app main .img-absolute--primary {
   position: absolute;
   bottom: 0;
@@ -55,7 +73,7 @@
 #app main .img-absolute--secondary-hesteg {
   position: absolute;
   right: 0;
-  top: 2  0vh;
+  top: 2 0vh;
 }
 
 #app main .img-absolute--secondary-zig {

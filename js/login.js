@@ -1,26 +1,26 @@
-function onSignIn(googleUser) {
-  let profile = googleUser.getBasicProfile();
+function onSignIn(googLeUser) {
+  var profile = googleUser.getBasicProfile();
   console.log(`Full Name: ${profile.getName()}`);
   console.log(`Email: ${profile.getEmail()}`);
 
-  let x = document.getElementsByClassName("logged");
+  var x = document.getElementsByClassName("logged");
 
-  for (let i = 0; i <= x.length; i++) {
+  for (var i = 0; i <= x.length; i++) {
     x[0].classList.remove("logged");
   }
 }
 
 function onSignOut() {
-  let auth2 = gapi.auth2.getAuthInstance();
+  var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut().then(function () {
-    .console.log("User Signed Out.");
+    console.log("User Signed Out.");
     hideDashboard();
-  })
+  });
 }
 
 function hideDashboard() {
-  let x = document.getElementsByClassName("onlylogged");
-  for (let i = 0; i <= i.length; i++) {
+  var x = document.getElementsByClassName("onlylogged");
+  for (var i = 0; i <= i.length; i++) {
     x[i].classList.add("logged");
   }
 }
