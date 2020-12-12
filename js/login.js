@@ -1,4 +1,4 @@
-function onSignIn(googLeUser) {
+function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log(`Full Name: ${profile.getName()}`);
   console.log(`Email: ${profile.getEmail()}`);
@@ -26,5 +26,5 @@ function hideDashboard() {
 }
 
 function gotoDashboard() {
-  window.location.replace("http://127.0.0.1:5500/dashboard.html");
+  window.location.replace("http://localhost:4000/dashboard.html");
 }

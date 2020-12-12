@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-blue : #6387FF;
+$color-red : #E8505B;
+
+#app {
+  background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
+  height: 100vh;
+  margin: auto;
+  width: 425px;
+  font-family: 'Inconsolata', monospace;
+  position: relative;
+  z-index: 1;
+
+  header {
+    .logo-brand {
+      margin-top: 25px;
+      margin-bottom: 70px;
+      text-align: center;
+
+      span {
+        color: #C7C7C9;
+      }
+    }
+  }
+
+  main {
+    margin-top:60px;
+    text-align: center;
+
+    .content {
+      // margin-top: 105px;
+
+      .abcRioButtonBlue {
+        width: 200px !important;
+      }
+    }
+
+    .logged {
+      display: none !important
+    }
+
+    .img-absolute {
+      &--primary {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      &--secondary-love {
+        position: absolute;
+        top: 25vh;
+        left: 0;
+      }
+
+      &--secondary-hesteg {
+        position: absolute;
+        right: 0;
+        top: 2 0vh;
+      }
+
+      &--secondary-zig {
+        position: absolute;
+        right: 30px;
+        top: 70vh;
+      }
+    }
+  }
+
+  footer {
+    background-color: #c8e0fd75;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

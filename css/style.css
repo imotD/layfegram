@@ -27,29 +27,12 @@
 }
 
 #app main {
-  margin-top: 185px;
+  margin-top: 60px;
   text-align: center;
 }
 
-#app main .btn-cta {
-  color: white;
-  background-color: #6387FF;
-  width: 50%;
-  padding: 15px;
-}
-
-#app main .or {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 15px;
-  margin: 15px 0 20px;
+#app main .content .abcRioButtonBlue {
+  width: 200px !important;
 }
 
 #app main .logged {
