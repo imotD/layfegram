@@ -19,6 +19,31 @@
   background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
 }
 
+#app .loader {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.6rem solid #999;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  -webkit-animation: loader 500ms linear infinite;
+          animation: loader 500ms linear infinite;
+}
+
+@-webkit-keyframes loader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #app header .logo-brand {
   margin-top: 25px;
   margin-bottom: 70px;
