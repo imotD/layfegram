@@ -7,13 +7,16 @@
 }
 
 #app {
-  background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   width: 425px;
   font-family: 'Inconsolata', monospace;
   position: relative;
   z-index: 1;
+}
+
+#app .bg-app {
+  background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
 }
 
 #app header .logo-brand {
@@ -26,7 +29,7 @@
   color: #C7C7C9;
 }
 
-#app main {
+#app .cs-main {
   margin-top: 60px;
   text-align: center;
 }
@@ -66,6 +69,13 @@
 }
 
 #app footer {
+  background-color: #E8505B;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#app .abs {
   background-color: #c8e0fd75;
   color: white;
   text-align: center;

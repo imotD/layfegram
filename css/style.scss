@@ -10,13 +10,16 @@ $color-blue : #6387FF;
 $color-red : #E8505B;
 
 #app {
-  background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   width: 425px;
   font-family: 'Inconsolata', monospace;
   position: relative;
   z-index: 1;
+
+  .bg-app {
+    background: linear-gradient(180.4deg, #FBFBFC 27.82%, #A9CFFE 131.31%);
+  }
 
   header {
     .logo-brand {
@@ -30,9 +33,12 @@ $color-red : #E8505B;
     }
   }
 
-  main {
-    margin-top:60px;
+  .cs-main {
+    margin-top: 60px;
     text-align: center;
+  }
+
+  main {
 
     .content {
       // margin-top: 105px;
@@ -76,6 +82,13 @@ $color-red : #E8505B;
   }
 
   footer {
+    background-color: $color-red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .abs {
     background-color: #c8e0fd75;
     color: white;
     text-align: center;
